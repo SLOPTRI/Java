@@ -22,11 +22,12 @@ public class Libro extends Publicacion implements Prestable{
     }
     @Override
     public String toString(){
-        switch(estaPrestado()){
-            case true:
-                return super.toString()+" (prestado)";
-            case false:
-                return super.toString()+" (no prestado)";
+        StringBuilder amai = new StringBuilder();
+        if(estaPrestado()){
+            amai.append(super.toString()+" (prestado)");
+        }else if(!estaPrestado()){
+            amai.append(super.toString()+" (no prestado)");
         }
+        return amai.toString();
     }
 }
