@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-Java/.gitignore
+.gitignore
 # Log file
 *.log
 
