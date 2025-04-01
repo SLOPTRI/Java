@@ -3,7 +3,9 @@
 .gitignore
 # Log file
 *.log
-
+/out
+/.idea
+Programacion.iml
 # BlueJ files
 *.ctxt
 
